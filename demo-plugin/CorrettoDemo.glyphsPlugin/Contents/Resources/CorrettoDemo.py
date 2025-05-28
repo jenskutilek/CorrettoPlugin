@@ -2,26 +2,49 @@ from __future__ import annotations
 
 from corretto.plugins import CorrettoPlugin
 
+# The class of your Corretto plugin must be called Plugin and must subclass
+# `corretto.plugins.CorrettoPlugin`.
+
 
 class Plugin(CorrettoPlugin):
+
     # The configuration will be read from this Custom Parameter if present:
     cpkey = "de.kutilek.corretto.demo"
 
     def parse_config(self, config: str) -> str:
-        # A Custom Parameter's value is always read as a string.
+        # Our Custom Parameter's value is always read as a string.
         # If necessary, you can parse and convert the value into a format your
         # plugin understands.
+
+        # If you don't need to do any processing, you can also delete the `parse_config`
+        # method.
+
+        # In this example, we just return the config as is.
         return config
 
     def process(self) -> bool:
-        # If the plugin is not configured, return False.
+        # Do the actual processing of the font.
+
+        # If the plugin is not configured, return `False`.
         if self.config is None:
             return False
 
-        # Just print some stats
-        print(self.ttfont)
-        print(self.ttfont_path)
+        # The contents of your Custom Parameter is stored here:
+        print(f"CorrettoDemo config: {self.config}")
+
+        # You can access the `fontTools.ttLib.TTFont` object of the exported font in
+        # `ttfont`:
+        table_tags = self.ttfont.keys()
+        print(f"The SFNT file has {len(table_tags)} tables: {table_tags}")
+
+        # Also, its full file path is available:
+        print(f"It is saved at '{self.ttfont_path}'.")
+
+        # In case you need to add information from the `GSInstance` that describes your
+        # font, it is also available:
         print(self.gsinstance)
+
+        # As are the `GSFont` and its file path:
         print(self.gsfont)
         print(self.gsfont_path)
 
