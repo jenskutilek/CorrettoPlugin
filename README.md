@@ -45,3 +45,24 @@ which will then be executed in the specified order.
 
 The API for Corretto plugins is simple. There's an example plugin right here in
 the `demo-plugin` folder.
+
+## Installation
+
+Download the repository and drag `Corretto.glyphsPlugin` onto the Glyphs app
+icon in your dock.
+
+Copy the default configuration file (shown above) to
+`~/Library/Application Support/Glyphs 3/global.correttoconfig.yaml`.
+
+Restart Glyphs.
+
+Install any missing Python dependencies by running the script
+`scripts-Glyphs/Check Corretto Installation.py` inside Glyphs, or install those modules
+via Terminal with the `pip` version  matching your selected Glyphs Python version, e.g.
+for Python 3.11:
+
+```bash
+pip3.11 install --user -U pyyaml "fonttools[woff]" jkunicode
+```
+
+Restart Glyphs again.
