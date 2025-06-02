@@ -50,5 +50,9 @@ class Plugin(CorrettoPlugin):
             f"It belongs to the font {self.gsfont} which is saved at {self.gsfont_path}"
         )
 
+        # If you want to work around bugs in certain Glyphs versions, you can check the
+        # build number:
+        print(f"Presented by Glyphs build {self.app_build}")
+
         # If your plugin has modified the font, return True.
         return False
