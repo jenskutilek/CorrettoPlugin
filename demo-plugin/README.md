@@ -49,4 +49,5 @@ The SFNT file has 12 tables: ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'nam
 It is saved at '~/Schriften/MyFont/fonts/MyFont-Regular.otf'.
 The font was generated from instance <GSInstance "Regular" (0.0)>
 It belongs to the font <GSFont "MyFont" v1.0 with 2 masters and 2 instances> which is saved at ~/Schriften/MyFont/MyFont.glyphs
+Presented by Glyphs build 3414.0
 ```
