@@ -25,9 +25,10 @@ class Plugin(CorrettoPlugin):
     def process(self) -> bool:
         # Do the actual processing of the font.
 
-        # If the plugin is not configured, return `False`.
-        if self.config is None:
-            return False
+        # If your plugin needs configuration via a Custom Parameter, but it is not
+        # configured, return `False`.
+        # if self.config is None:
+        #     return False
 
         # The contents of your Custom Parameter is stored here:
         print(f"CorrettoDemo config: {self.config}")
@@ -42,11 +43,12 @@ class Plugin(CorrettoPlugin):
 
         # In case you need to add information from the `GSInstance` that describes your
         # font, it is also available:
-        print(self.gsinstance)
+        print(f"The font was generated from instance {self.gsinstance}")
 
         # As are the `GSFont` and its file path:
-        print(self.gsfont)
-        print(self.gsfont_path)
+        print(
+            f"It belongs to the font {self.gsfont} which is saved at {self.gsfont_path}"
+        )
 
         # If your plugin has modified the font, return True.
         return False
