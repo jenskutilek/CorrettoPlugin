@@ -1,6 +1,6 @@
 # Demo Plugin For Corretto
 
-1. To install, drag `Corretto.glyphsPlugin` and `CorrettoDemo.glyphsPlugin` onto the Glyphs app icon in your dock.
+1. To install, drag `CorrettoDemo.glyphsPlugin` onto the Glyphs app icon in your dock.
 2. Restart Glyphs.
 3. Add `CorrettoDemo` to your Corretto configuration file `~/Library/Application Support/Glyphs 3/global.correttoconfig.yaml`:
 
@@ -20,6 +20,10 @@
             - module: corretto.plugins.Webfonts
             - module: CorrettoDemo # New!
     ```
+
+    The name of the module must match its file name inside the plugin’s _Resources_
+    folder: `CorrettoDemo.glyphsPlugin/Contents/Resources/CorrettoDemo.py` →
+    `- module: CorrettoDemo`.
 
     You can add it at the end, or wherever you like. If your own plugin actually modifies
     the exported font, you must list it before the `corretto.plugins.Save` plugin so the
