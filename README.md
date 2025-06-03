@@ -51,9 +51,6 @@ the `demo-plugin` folder.
 Download the repository and drag `Corretto.glyphsPlugin` onto the Glyphs app
 icon in your dock.
 
-Copy the default configuration file (shown above) to
-`~/Library/Application Support/Glyphs 3/global.correttoconfig.yaml`.
-
 Restart Glyphs.
 
 Install any missing Python dependencies by running the script
@@ -66,3 +63,5 @@ pip3.11 install --user -U pyyaml "fonttools[woff]" jkunicode
 ```
 
 Restart Glyphs again.
+
+For more information, check out the [extensive documentation on the dedicated Corretto website](https://corretto.kutilek.de).
