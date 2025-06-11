@@ -50,6 +50,6 @@ the `demo-plugin` folder.
 
 ## Installation
 
-Install Corretto through the Glyphs Plugin Manager at glyphsapp3://showplugin/Corretto%20Post-Processor
+Install Corretto through the Glyphs Plugin Manager. The [direct link](https://corretto.kutilek.de/get) can be found on the Corretto website.
 
 For more information, make sure to check out the [extensive documentation on the dedicated Corretto website](https://corretto.kutilek.de).
