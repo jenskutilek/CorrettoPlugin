@@ -16,6 +16,8 @@
 	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>UpdateFeedURL</key>
+	<string>https://raw.githubusercontent.com/jenskutilek/CorrettoPlugin/refs/heads/main/demo-plugin/CorrettoDemo.glyphsPlugin/Contents/Info.plist</string>
 	<key>productPageURL</key>
 	<string>https://corretto.kutilek.de/</string>
 	<key>NSHumanReadableCopyright</key>
