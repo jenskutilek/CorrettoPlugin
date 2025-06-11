@@ -15,6 +15,8 @@ Export level parameters will take precedence over font level parameters.
 
 ## For Developers And Font Engineers
 
+![Yo dawg, we heard you like Glyphs plugins, so we put plugins in our Glyphs plugins](meme/yo-dawg.jpg)
+
 The functionality of Corretto is based on plugins. Corretto comes with a
 number of built-in plugins. You can configure which of those are called, and
 in which order, in a YAML configuration file located at
@@ -48,20 +50,6 @@ the `demo-plugin` folder.
 
 ## Installation
 
-Download the repository and drag `Corretto.glyphsPlugin` onto the Glyphs app
-icon in your dock.
+Install Corretto through the [Glyphs Plugin Manager](glyphsapp3://showplugin/Corretto%20Post-Processor).
 
-Restart Glyphs.
-
-Install any missing Python dependencies by running the script
-`scripts-Glyphs/Check Corretto Installation.py` inside Glyphs, or install those modules
-via Terminal with the `pip` version  matching your selected Glyphs Python version, e.g.
-for Python 3.11:
-
-```bash
-pip3.11 install --user -U pyyaml "fonttools[woff]" jkunicode
-```
-
-Restart Glyphs again.
-
-For more information, check out the [extensive documentation on the dedicated Corretto website](https://corretto.kutilek.de).
+For more information, make sure to check out the [extensive documentation on the dedicated Corretto website](https://corretto.kutilek.de).
