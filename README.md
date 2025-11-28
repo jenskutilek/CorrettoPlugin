@@ -24,18 +24,19 @@ in which order, in a YAML configuration file located at
 
 ```yaml
 corretto:
-  plugins:
-    - module: corretto.plugins.MathTable
-    - module: corretto.plugins.MergeTTX
-    - module: corretto.plugins.FixedPitch
-    - module: corretto.plugins.GaspTable
-    - module: corretto.plugins.DeltaBase
-    - module: corretto.plugins.MaxpStack
-    - module: corretto.plugins.HeadTable
-    - module: corretto.plugins.VariableFontMetrics
-    - module: corretto.plugins.Save
-    - module: corretto.plugins.SaveTTX
-    - module: corretto.plugins.Webfonts
+    plugins:
+        - module: corretto.plugins.MathTable
+        - module: corretto.plugins.MergeTTX
+        - module: corretto.plugins.FixedPitch
+        - module: corretto.plugins.GaspTable
+        - module: corretto.plugins.DeltaBase
+        - module: corretto.plugins.MaxpStack
+        - module: corretto.plugins.HeadTable
+        - module: corretto.plugins.VariableFontMetrics
+        - module: corretto.plugins.Save
+        - module: corretto.plugins.SaveCFF2Static
+        - module: corretto.plugins.SaveTTX
+        - module: corretto.plugins.Webfonts
 ```
 
 A problem with plugins that get called on Glyphs’ `DOCUMENTEXPORTED` callback

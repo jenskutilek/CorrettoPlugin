@@ -7,8 +7,9 @@ py_ok = False
 if version_info.major == 3:
     if version_info.minor in (10, 11, 12, 13, 14):
         cor_path = Path(__file__).parent / f"corretto3{version_info.minor}.zip"
-        path.append(str(cor_path))
-        py_ok = True
+        if cor_path.exists():
+            path.append(str(cor_path))
+            py_ok = True
 
 if not py_ok:
     from GlyphsApp import Message

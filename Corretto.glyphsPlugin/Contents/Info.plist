@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
-	<key>CFBundleExecutable</key>
-	<string>plugin</string>
-	<key>CFBundleIdentifier</key>
-	<string>de.kutilek.corretto</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>Corretto</string>
-	<key>CFBundleShortVersionString</key>
-	<string>2.0.2</string>
-	<key>CFBundleVersion</key>
-	<string>202</string>
-	<key>UpdateFeedURL</key>
-	<string>https://raw.githubusercontent.com/jenskutilek/CorrettoPlugin/refs/heads/main/Corretto.glyphsPlugin/Contents/Info.plist</string>
-	<key>productPageURL</key>
-	<string>https://corretto.kutilek.de/</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright, Jens Kutilek, 2011-2025</string>
-	<key>NSPrincipalClass</key>
-	<string>CorrettoPlugin</string>
-	<key>PyMainFileNames</key>
-	<array>
-		<string>plugin.py</string>
-	</array>
-</dict>
+	<dict>
+		<key>CFBundleDevelopmentRegion</key>
+		<string>en</string>
+		<key>CFBundleExecutable</key>
+		<string>plugin</string>
+		<key>CFBundleIdentifier</key>
+		<string>de.kutilek.corretto</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleName</key>
+		<string>Corretto</string>
+		<key>CFBundleShortVersionString</key>
+		<string>2.0.3</string>
+		<key>CFBundleVersion</key>
+		<string>203</string>
+		<key>UpdateFeedURL</key>
+		<string>
+			https://raw.githubusercontent.com/jenskutilek/CorrettoPlugin/refs/heads/main/Corretto.glyphsPlugin/Contents/Info.plist</string>
+		<key>productPageURL</key>
+		<string>https://corretto.kutilek.de/</string>
+		<key>NSHumanReadableCopyright</key>
+		<string>Copyright, Jens Kutilek, 2011-2025</string>
+		<key>NSPrincipalClass</key>
+		<string>CorrettoPlugin</string>
+		<key>PyMainFileNames</key>
+		<array>
+			<string>plugin.py</string>
+		</array>
+	</dict>
 </plist>
