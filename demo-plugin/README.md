@@ -16,6 +16,7 @@
             - module: corretto.plugins.HeadTable
             - module: corretto.plugins.VariableFontMetrics
             - module: corretto.plugins.Save
+            - module: corretto.plugins.SaveCFF2Static
             - module: corretto.plugins.SaveTTX
             - module: corretto.plugins.Webfonts
             - module: CorrettoDemo # New!
