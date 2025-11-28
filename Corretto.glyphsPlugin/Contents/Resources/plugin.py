@@ -5,7 +5,7 @@ from sys import path, version_info
 
 py_ok = False
 if version_info.major == 3:
-    if version_info.minor in (10, 11, 12, 13):
+    if version_info.minor in (10, 11, 12, 13, 14):
         cor_path = Path(__file__).parent / f"corretto3{version_info.minor}.zip"
         path.append(str(cor_path))
         py_ok = True
