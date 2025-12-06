@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from corretto.conditions import is_cff, is_truetype, is_variable, is_variable_ttf
 from corretto.plugins import CorrettoPlugin
 
 # The class of your Corretto plugin must be called Plugin and must subclass
@@ -7,7 +8,6 @@ from corretto.plugins import CorrettoPlugin
 
 
 class Plugin(CorrettoPlugin):
-
     # The configuration will be read from this Custom Parameter if present:
     cpkey = "de.kutilek.corretto.demo"
 
@@ -22,6 +22,8 @@ class Plugin(CorrettoPlugin):
         # In this example, we just return the config as is.
         return config
 
+    # Use conditions as decorators to limit processing to certain font types
+    @is_cff
     def process(self) -> bool:
         # Do the actual processing of the font.
 
