@@ -19,10 +19,11 @@ if not py_ok:
         "is not supported by Corretto."
     )
 
-import objc
-from corretto import Corretto
-from GlyphsApp import Glyphs
-from GlyphsApp.plugins import GeneralPlugin
+import objc  # noqa: E402
+from GlyphsApp import Glyphs  # noqa: E402
+from GlyphsApp.plugins import GeneralPlugin  # noqa: E402
+
+from corretto import Corretto  # noqa: E402
 
 
 class CorrettoPlugin(GeneralPlugin):
